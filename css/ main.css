@@ -1,0 +1,177 @@
+
+/* .container button:hover {
+  background-color: hsl(150, 59%, 54%);
+  box-shadow: 0 5px 15px rgba(57,255,20,.5);
+} */
+
+/* ----- main styles - MOBILE FIRST - Mobile styles - 375px----- */
+
+body {
+  background: hsl(218, 23%, 16%);
+  font-size: 16px;
+  height: 100%;
+}
+
+.container-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* box */
+.container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  width: 343px;
+  height: 315px;
+  padding: 0 1em 0 1em;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+
+h6 {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase; 
+  font-size: smaller;
+  letter-spacing: .2em;
+  margin: 8em 0 0 0;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  font-size: 1.75em;
+  color: hsl(193, 38%, 86%);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.divider {
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 1em;
+}
+
+.dot-dice {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img #dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 65px;
+  width: 65px;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#transform:hover {
+  box-shadow: 0 0 2.5rem #52ffa8;
+  transform: scale(1.1);
+  border-color: #52ffa8;
+}
+
+footer {
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+}
+
+/* The three ids below (and html) were from guidance found online: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+#container-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+#container {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+/* ----- Attribution & Link ----- */
+.attribution {
+  text-align: center;
+  font-size: .7em;
+  font-weight: lighter;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:link {
+  color: #cee3e9;
+}
+
+.attribution a:hover {
+  color:#52ffa8;
+}
+
+/* ----- Desktop styles - 1440px ----- */
+@media (min-width: 1440px) {
+  .container {
+  width: 540px;
+  height: 330px;
+  } 
+
+  h6 {
+    font-size: .95em;
+    letter-spacing: .2em;
+    margin: 8em 0 0 0;
+  }
+  
+  p {
+    padding: 0 1.5em 0 1.5em;
+    margin-top: 1.25em;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .divider {
+    background-image: url('../imgs/pattern-divider-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1.5em;
+  }
+
+  img .divider {
+    background-image:;
+  }
+
+}
